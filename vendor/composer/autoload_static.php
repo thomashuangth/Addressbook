@@ -52,6 +52,10 @@ class ComposerStaticInit6e39e16d27915b3bf57b5ed4fe59f85a
         array (
             'Incenteev\\ParameterHandler\\' => 27,
         ),
+        'F' => 
+        array (
+            'FOS\\UserBundle\\' => 15,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -150,6 +154,10 @@ class ComposerStaticInit6e39e16d27915b3bf57b5ed4fe59f85a
         'Incenteev\\ParameterHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/incenteev/composer-parameter-handler',
+        ),
+        'FOS\\UserBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofsymfony/user-bundle',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
