@@ -100,4 +100,26 @@ class DefaultController extends Controller
 
         return $this->redirectToRoute('homepage');
     }
+
+     /**
+     * @Route("/deletetask/{id}", name="delete_task")
+     */
+    public function deleteContactAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $contact = $em
+            ->getRepository('AppBundle:Contact')
+            ->find($id);
+
+        if (!$contact) {
+            throw $this->createNotFoundException(
+                'No contact found for id '.$id
+            );
+        }
+
+        $em->remove($contact);
+        $em->flush();
+
+        return $this->redirectToRoute('homepage');
+    }
 }

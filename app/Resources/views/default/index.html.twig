@@ -43,7 +43,7 @@
                             <td>{{ contact.address }}</td>
                             <td>{{ contact.phone }}</td>
                             <td>{{ contact.website }}</td>
-                            <td><a href="{{ path('edit_page', {'id': contact.id}) }}">Edit</a></td>
+                            <td><a href="{{ path('edit_page', {'id': contact.id}) }}">Edit</a><a href="{{ path('delete_task', {'id': contact.id}) }}">Delete</a></td>
                         </tr>
                     {% endfor %}
                 </tbody>
