@@ -10,7 +10,9 @@
 
 {%- block form_widget_simple -%}
     {%- set type = type|default('text') -%}
-    <input type="{{ type }}" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+    <div class="form-group">
+        <input type="{{ type }}" {{ block('widget_attributes') }} class="form-control"{% if value is not empty %}value="{{ value }}" {% endif %}/>
+    </div>
 {%- endblock form_widget_simple -%}
 
 {%- block form_widget_compound -%}
